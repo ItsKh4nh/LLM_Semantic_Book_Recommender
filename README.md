@@ -36,8 +36,8 @@ This project uses the [7K Books with Metadata dataset](https://www.kaggle.com/da
 The project utilizes the following Large Language Models (LLMs), primarily integrated via LangChain:
 
 * **OpenAI Embeddings (via LangChain)**: Used to generate text embeddings from book descriptions. These embeddings are crucial for the semantic search functionality, enabling the system to find books based on the meaning and context of user queries rather than just keyword matching.
-* **`facebook/bart-large-mnli` (Hugging Face Model)**: Employed for zero-shot text classification. This model categorizes books into 'Fiction' or 'Non-Fiction' based on their descriptions, allowing users to filter recommendations accordingly.
-* **`j-hartmann/emotion-english-distilroberta-base` (Hugging Face Model)**: Utilized for sentiment and emotion analysis. This model processes book descriptions to identify and extract predominant emotional tones (e.g., happy, sad, suspenseful), offering another dimension for users to refine their book searches.
+* **[`facebook/bart-large-mnli`](https://huggingface.co/facebook/bart-large-mnli) (Hugging Face Model)**: Employed for zero-shot text classification. This model categorizes books into 'Fiction' or 'Non-Fiction' based on their descriptions, allowing users to filter recommendations accordingly.
+* **[`j-hartmann/emotion-english-distilroberta-base`](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base) (Hugging Face Model)**: Utilized for sentiment and emotion analysis. This model processes book descriptions to identify and extract predominant emotional tones (e.g., happy, sad, suspenseful), offering another dimension for users to refine their book searches.
 
 ## Results
 The system creates an intuitive book recommendation interface that allows users to discover books based on natural language queries, categories, and emotional tones.
