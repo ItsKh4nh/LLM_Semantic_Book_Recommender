@@ -1,4 +1,4 @@
-kagglehub
+kaggle
 pandas
 matplotlib
 seaborn
@@ -7,7 +7,11 @@ langchain-community
 langchain-opencv
 langchain-chroma
 transformers
-torch
 gradio
-ipykernel
 jupyter
+ipykernel
+
+torch==2.7.0+cu118 # Enable GPU support (please check for your compatible version of CUDA)
+torchvision==2.7.0+cu118
+torchaudio==2.7.0+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
