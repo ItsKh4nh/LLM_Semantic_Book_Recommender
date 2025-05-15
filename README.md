@@ -17,29 +17,26 @@ Key features include:
 * **Web Application**: Interactive book recommendation interface with Gradio (`gradio-dashboard.py`)
 
 ## Technologies Used
-* **Python 3.11**
-* **Data Processing**: Pandas, NumPy
-* **Data Visualization**: Matplotlib, Seaborn
-* **Vector Database**: Chroma DB
-* **LLM Integration**: LangChain
-* **Machine Learning**: PyTorch, Transformers
-* **Web Interface**: Gradio
-* **Development**: Jupyter Notebooks
+* Python 3.11  
+* Pandas  
+* NumPy  
+* Matplotlib  
+* Seaborn  
+* Chroma DB  
+* LangChain  
+* PyTorch  
+* Transformers  
+* Gradio  
+* Jupyter Notebooks
 
 ## Dataset
-This project uses the [7K Books with Metadata dataset](https://www.kaggle.com/datasets/dylanjcastillo/7k-books-with-metadata) from Kaggle, which contains approximately 7,000 books with rich metadata including:
-* Titles and authors
-* Descriptions
-* Publication details
-* ISBN numbers
-* Cover images
-* Categories
+This project uses the [7K Books with Metadata dataset](https://www.kaggle.com/datasets/dylanjcastillo/7k-books-with-metadata) from Kaggle, which contains approximately 7,000 books with rich metadata.
 
 ## LLM Models Used
 The project leverages several AI models through LangChain integrations:
 * **OpenAI Embeddings**: For semantic text representation and similarity search
-* **Text Classification**: Zero-shot classification for categorizing books
-* **Sentiment Analysis**: For emotional tone extraction from book descriptions
+* **Text Classification**: [facebook/bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli) for zero-shot classification of books into fiction/non-fiction categories
+* **Sentiment Analysis**: [j-hartmann/emotion-english-distilroberta-base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base) for emotional tone extraction from book descriptions
 
 ## Results
 The system creates an intuitive book recommendation interface that allows users to discover books based on natural language queries, categories, and emotional tones.
@@ -94,6 +91,3 @@ The interface will be available at `http://127.0.0.1:7860` by default.
 2. Select a category filter (optional)
 3. Choose an emotional tone preference (optional)
 4. Click "Find recommendations" to see book suggestions
-
-## License
-[Add your license information here] 
